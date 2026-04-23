@@ -1,5 +1,3 @@
-# Encuesta-Escolar-216
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,14 +9,9 @@
         .container { max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         h2 { color: #2c3e50; text-align: center; }
         label { display: block; margin-top: 15px; font-weight: bold; }
-        input[type="text"], input[type="email"], textarea, select {
-            width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
-        }
+        input[type="text"], textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
         textarea { height: 100px; resize: vertical; }
-        button {
-            background-color: #27ae60; color: white; padding: 12px 20px; border: none; border-radius: 4px;
-            cursor: pointer; width: 100%; margin-top: 20px; font-size: 16px;
-        }
+        button { background-color: #27ae60; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 20px; font-size: 16px; }
         button:hover { background-color: #219150; }
         .required { color: red; }
     </style>
@@ -27,33 +20,28 @@
 
 <div class="container">
     <h2>Encuesta sobre Problemática de Basura</h2>
-    <p>Por favor, responde las siguientes preguntas para nuestro proyecto escolar.</p>
-
-    <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+    <form action="https://formspree.io/f/antoniomejia1234321@gmail.com" method="POST">
         
         <label for="nombre">Nombre Completo <span class="required">*</span></label>
-        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+        <input type="text" name="nombre" id="nombre" required>
 
         <label for="grupo">Grupo Escolar <span class="required">*</span></label>
-        <input type="text" name="grupo" id="grupo" placeholder="Ej. 602" required>
+        <input type="text" name="grupo" id="grupo" required>
 
-        <label>1. ¿Por qué crees que parte de la comunidad tenga la culpa por la gran cantidad de basura en su entorno?</label>
-        <textarea name="culpa_comunidad" placeholder="Escribe tu opinión aquí..."></textarea>
+        <label>1. ¿Por qué crees que parte de la comunidad tenga la culpa por la gran cantidad de basura?</label>
+        <textarea name="pregunta_1"></textarea>
 
-        <label>2. ¿Qué efectos en el ambiente has notado que causa la basura?</label>
-        <textarea name="efectos_ambientales" placeholder="Escribe lo que has observado..."></textarea>
+        <label>2. ¿Qué efectos en el ambiente has notado?</label>
+        <textarea name="pregunta_2"></textarea>
 
-        <label>3. ¿Qué errores humanos contribuyen al aumento de la basura? (Tirarla en la calle, no reciclar, consumo excesivo, etc.)</label>
-        <textarea name="errores_humanos" placeholder="Menciona las acciones que consideres..."></textarea>
+        <label>3. ¿Qué errores humanos contribuyen al aumento de la basura?</label>
+        <textarea name="pregunta_3"></textarea>
 
-        <label>4. ¿Qué consecuencias provoca la basura en el medio ambiente y la salud de las personas?</label>
-        <textarea name="consecuencias_salud" placeholder="Escribe las consecuencias..."></textarea>
+        <label>4. ¿Qué consecuencias provoca la basura en la salud?</label>
+        <textarea name="pregunta_4"></textarea>
 
-        <label>5. ¿Qué soluciones viables se pueden aplicar para reducir y manejar mejor la basura?</label>
-        <textarea name="soluciones_viables" placeholder="Propón algunas soluciones..."></textarea>
-
-        <label for="comentarios">Comentarios adicionales u observaciones (Libre)</label>
-        <textarea name="comentarios_libres" id="comentarios" placeholder="Cualquier otra idea que quieras compartir..."></textarea>
+        <label>5. ¿Qué soluciones viables se pueden aplicar?</label>
+        <textarea name="pregunta_5"></textarea>
 
         <button type="submit">Enviar Encuesta</button>
     </form>
@@ -61,5 +49,3 @@
 
 </body>
 </html>
-<form action="https://formspree.io/f/antoniomejia1234321@gmail.com" method="POST">
-
